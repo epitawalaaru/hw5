@@ -37,12 +37,21 @@ The most important files for the assignment are:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/epitawalaaru/hw5.gitt
+   cd hw5
 
 
 
+## Create and activate the Conda environment
 
+conda env create -f environment.yml
+conda activate homework5
+
+
+
+## From the repository root (the folder containing run_models.py), run:
+
+python run_models.py
 
 
 
