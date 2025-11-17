@@ -5,7 +5,47 @@ HW5
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/HW5/branch/main/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/HW5/branch/main)
 
 
-The goal of your package will be to run your code from HW 4, where you made fingerprint-based models trained on the lipophilicity dataset.
+The goal of your package to run the code from HW 4, where the fingerprint-based models were trained on the lipophilicity dataset.
+
+The code:
+
+- Loads the Lipophilicity dataset (`Lipophilicity.csv`)
+- Generates **Morgan** and **MACCS** fingerprints from SMILES using RDKit
+- Trains separate `MLPRegressor` models for each fingerprint type
+- Reports the test set RMSE for each model
+- Prints the name of the currently active Conda environment
+
+
+
+## Repository structure
+
+The most important files for the assignment are:
+
+- `environment.yml` – Conda environment specification (uses `conda-forge` and includes `rdkit`)
+- `LICENSE` – License file for this repository
+- `README.md` – This file
+- `run_models.py` – Script that:
+  - Imports fingerprint functions
+  - Trains both models
+  - Calculates RMSEs
+  - Prints RMSEs and the Conda environment name
+- `hw5/data/Lipophilicity.csv` – Lipophilicity dataset
+
+
+## Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/<your-username>/<your-repo-name>.git
+   cd <your-repo-name>
+
+
+
+
+
+
+
 
 ### Copyright
 
