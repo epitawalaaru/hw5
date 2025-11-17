@@ -1,0 +1,12 @@
+name: homework5
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scikit-learn
+  - rdkit
+  - pip
