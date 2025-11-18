@@ -19,9 +19,9 @@ The code:
 
 ## Repository structure
 
-The most important files for the assignment are:
+The important files:
 
-- `environment.yml` – Conda environment specification (uses `conda-forge` and includes `rdkit`)
+- `environment.yml` – Conda environment specification
 - `LICENSE` – License file for this repository
 - `README.md` – This file
 - `run_models.py` – Script that:
@@ -30,6 +30,8 @@ The most important files for the assignment are:
   - Calculates RMSEs
   - Prints RMSEs and the Conda environment name
 - `hw5/data/Lipophilicity.csv` – Lipophilicity dataset
+- `hw5/data/fingerprints.py` – Functions to create MACCS and Morgan fingerprints from a list of SMILES
+
 
 
 ## Installation
@@ -40,22 +42,11 @@ The most important files for the assignment are:
    git clone https://github.com/epitawalaaru/hw5.gitt
    cd hw5
 
-2. **Create and activate the Conda environmen**
+2. **Create and activate the Conda environment**
 
    ```bash
    conda env create -f environment.yml
    conda activate homework5
-
-
-
-
-
-## Create and activate the Conda environment
-
-conda env create -f environment.yml
-conda activate homework5
-
-
 
 ## From the repository root (the folder containing run_models.py), run:
 
