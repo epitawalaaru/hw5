@@ -68,9 +68,12 @@ def main():
     maccs_rmse = compute_rmse(maccs_model, maccs_scaler, X_test_maccs, y_test)
 
 
-    env_name = os.getenv("CONDA_DEFAULT_ENV", "UNKNOWN_ENV")
+    env_name = os.getenv("CONDA_DEFAULT_ENV")
 
- 
+    if not env_name:
+        prefix = os.getenv("CONDA_PREFIX", "")
+        env_name = os.path.basename(prefix) if prefix else "UNKNOWN_ENV"
+
     print("=== Fingerprint models ===")
     print(f"Morgan RMSE: {morgan_rmse:.4f}")
     print(f"MACCS  RMSE: {maccs_rmse:.4f}")
