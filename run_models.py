@@ -71,7 +71,7 @@ def main():
     env_name = os.getenv("CONDA_DEFAULT_ENV", "UNKNOWN_ENV")
 
  
-    print("=== Lipophilicity fingerprint models ===")
+    print("=== Fingerprint models ===")
     print(f"Morgan RMSE: {morgan_rmse:.4f}")
     print(f"MACCS  RMSE: {maccs_rmse:.4f}")
     print()

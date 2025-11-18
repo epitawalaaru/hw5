@@ -39,7 +39,7 @@ The important files:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/epitawalaaru/hw5.gitt
+   git clone https://github.com/epitawalaaru/hw5.git
    cd hw5
 
 2. **Create and activate the Conda environment**
