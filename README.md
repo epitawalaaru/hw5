@@ -40,6 +40,14 @@ The most important files for the assignment are:
    git clone https://github.com/epitawalaaru/hw5.gitt
    cd hw5
 
+2. **Create and activate the Conda environmen**
+
+   ```bash
+   conda env create -f environment.yml
+   conda activate homework5
+
+
+
 
 
 ## Create and activate the Conda environment
