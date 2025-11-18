@@ -50,10 +50,8 @@ The important files:
 
 ## From the repository root (the folder containing run_models.py), run:
 
-python run_models.py
-
-
-
+   ```bash
+   python run_models.py
 
 ### Copyright
 
